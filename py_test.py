@@ -4,8 +4,8 @@ from yfinance import Ticker
 file_path = "nasdaq-listed.csv"
 df = pd.read_csv(file_path)
 first_row = df.iloc[:, 0]
-# ewp = int(input("Enter 0 only EPS Enter 1 for both price and EWS"))
-ewp = 1
+ewp = int(input("Enter 0 only EPS Enter 1 for both price and EWS"))
+
 with open("demo.txt", "w") as f:  
 
     for i in range(len(first_row)):
